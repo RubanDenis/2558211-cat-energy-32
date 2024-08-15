@@ -1,20 +1,18 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixin.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/button.scss";
-@import "./blocks/button-primary.scss";
-@import "./blocks/button-secondary.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/main-container.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/programs.scss";
-@import "./blocks/program-card.scss";
 @import "./blocks/about.scss";
 @import "./blocks/example.scss";
 @import "./blocks/catalog-container.scss";

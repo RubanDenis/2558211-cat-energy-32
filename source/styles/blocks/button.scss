@@ -1,0 +1,11 @@
+.button {
+  font-family: $secondary-font;
+  font-weight: $font-weight-normal;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--primary {
+    color: $light-text;
+    background-color: $bg-primary;
+  }
+}
