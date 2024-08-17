@@ -7,6 +7,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: $dark-text-lighten;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -17,7 +18,8 @@
 .contacts__address {
   font-size: 14px;
   line-height: 1.42;
-  color: $dark-gray-text;
+  color: $gray-text;
+  font-style: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
