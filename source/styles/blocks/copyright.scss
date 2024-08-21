@@ -2,4 +2,18 @@
   font-size: 16px;
   line-height: 1.25;
   color: $gray-text;
+
+  &::after {
+    @include mask-img (27px, 34px, url("../../icons/stack.svg#academy"), $light-gray-text);
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    background-color: $bg-primary;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

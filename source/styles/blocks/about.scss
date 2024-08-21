@@ -26,6 +26,28 @@
   }
 }
 
+.about__item {
+  &::before {
+    background-color: $bg-primary;
+  }
+
+  &--leaf::before {
+    @include icon-img (30px, 32px, url("../../icons/stack.svg#leaf"));
+  }
+
+  &--watter::before {
+    @include icon-img (27px, 29px, url("../../icons/stack.svg#watter"));
+  }
+
+  &--eat::before {
+    @include icon-img (26px, 30px, url("../../icons/stack.svg#eat"));
+  }
+
+  &--timer::before {
+    @include icon-img (27px, 31px, url("../../icons/stack.svg#timer"));
+  }
+}
+
 .about__description {
   margin: 0;
 }
