@@ -3,30 +3,30 @@
   font-weight: $font-weight-normal;
 
   &--slim::before {
-    @include icon-img (36px, 50px, url("../../icons/stack.svg#cat-slim"));
+    @include icon-img (50px, 53px, url("../../icons/stack.svg#cat-slim"));
 
     @media (min-width: $tablet-width) {
-      width: 140px;
-      height: 194px;
+      width: 200px;
+      height: 211px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 70px;
-      height: 97px;
+      width: 100px;
+      height: 106px;
     }
   }
 
   &--pro::before {
-    @include icon-img (67px, 28px, url("../../icons/stack.svg#cat-pro"));
+    @include icon-img (67px, 50px, url("../../icons/stack.svg#cat-pro"));
 
     @media (min-width: $tablet-width) {
       width: 268px;
-      height: 112px;
+      height: 200px;
     }
 
     @media (min-width: $desktop-width) {
       width: 134px;
-      height: 56px;
+      height: 100px;
     }
   }
 }
@@ -46,6 +46,7 @@
 }
 
 .programs__description {
+  font-family: $primary-font;
   font-size: 14px;
   line-height: 1.28;
   color: $gray-text;

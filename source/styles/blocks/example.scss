@@ -26,6 +26,7 @@
 }
 
 .example__description {
+  font-family: $primary-font;
   font-size: 14px;
   line-height: 1.28;
   font-weight: $font-weight-normal;
@@ -51,6 +52,7 @@
 }
 
 .example__item-description {
+  font-family: $primary-font;
   font-size: 12px;
   line-height: 1;
   color: $gray-text;
