@@ -1,3 +1,9 @@
+.about {
+  @include flex (column, space-between, flex-start);
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
 .about__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -12,6 +18,9 @@
 }
 
 .about__list {
+  @include flex (column, space-between, flex-start);
+  flex-wrap: wrap;
+  gap: 20px;
   font-family: $primary-font;
   font-size: 14px;
   line-height: 1.28;
@@ -22,14 +31,32 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
   }
 }
 
 .about__item {
+  @include flex (row, flex-start, center);
+  gap: 20px;
+  width: 100%;
+
   &::before {
     background-color: $bg-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include flex (column, flex-start, flex-start);
+    width: calc(50% - 77px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(25% - 30px);
   }
 
   &--leaf::before {

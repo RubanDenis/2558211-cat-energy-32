@@ -1,4 +1,6 @@
 .copyright {
+  @include flex (row, space-between, center);
+  width: 100%;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 1.25;
@@ -16,5 +18,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    gap: 23px;
+    width: auto;
   }
 }

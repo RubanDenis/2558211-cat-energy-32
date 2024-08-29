@@ -1,4 +1,13 @@
+.header {
+  @include flex (row, space-between, center);
+  width: 100%;
+  min-height: 65px;
+  padding: 0 20px;
+}
+
 .header__logo {
+  @include flex (row, space-between, center);
+
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -6,5 +15,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }

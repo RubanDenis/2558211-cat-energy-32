@@ -1,3 +1,10 @@
 .footer {
+  @include flex (column, space-between, center);
+  width: 100%;
+  padding: 0 20;
   background-color: $bg-secondary;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

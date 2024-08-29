@@ -1,3 +1,13 @@
+.programs {
+  @include flex (column, flex-start, flex-start);
+  gap: 20px;
+  padding: 0 20px;
+
+  @media (min-width: $desktop-width) {
+    @include flex (row, space-between, center);
+  }
+}
+
 .programs__element {
   background-color: $bg-secondary;
   font-weight: $font-weight-normal;
