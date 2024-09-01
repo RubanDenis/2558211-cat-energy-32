@@ -16,7 +16,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--main">
     <a class="header__logo" href="./index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-desktop.svg" width="70" height="59">
@@ -35,15 +35,15 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
 
-      <ul class="navigation__list site-list">
+      <ul class="navigation__list site-list site-list--main">
         <li class="site-list__item site-list__item--active">
-          <a href="./index.html">Главная</a>
+          <a class="site-list__link" href="./index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="./catalog.html">Каталог продукции</a>
+          <a class="site-list__link" href="./catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Подбор программы</a>
+          <a class="site-list__link" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -55,6 +55,8 @@
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__tagline">Занялся собой? Займись котом!</p>
 
+        <a class="promo__button button button--primary" href="#">Подобрать программу</a>
+
         <picture>
           <source media="(min-width: 1440px)" srcset="./images/promo-desktop@1x.webp 1x, ./images/promo-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
           <source media="(min-width: 768px)" srcset="./images/promo-tablet@1x.webp 1x, ./images/promo-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
@@ -64,8 +66,6 @@
           <source media="(min-width: 768px)" srcset="./images/promo-tablet@1x.png 1x, ./images/promo-tablet@2x.png 2x" width="709" height="609" type="image/png">
           <img class="promo__image" src="./images/promo-mobile@1x.png" srcset="./images/promo-mobile@2x.png 2x" width="280" height="270" alt="Промо изображение кошачьего питания">
         </picture>
-
-        <a class="promo__button button button--primary" href="#">Подобрать программу</a>
       </div>
     </section>
 
@@ -167,35 +167,37 @@
       <div class="contacts__container contacts__container--desktop">
         <p class="contacts__message">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">
-          <span>ул. Большая Конюшенная, д. 19/8</span>
-          <span>Санкт-Петербург</span>
+          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="contacts__city">Санкт-Петербург</span>
         </address>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198223!2d30.320472477458367!3d59.93871916209349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1722879318812!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198223!2d30.320472477458367!3d59.93871916209349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1722879318812!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
   <footer class="footer">
-    <a class="footer__logo" href="./index.html">
-      <img class="footer__logo-text" src="./images/footer-logo.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
-    </a>
+    <div class="footer__wrapper">
+      <a class="footer__logo" href="./index.html">
+        <img class="footer__logo-text" src="./images/footer-logo.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+      </a>
 
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link social-list__link--tg" href="#"><span class="visually-hidden">Telegram</span></a>
-      </li>
-    </ul>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#"><span class="visually-hidden">Youtube</span></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--tg" href="#"><span class="visually-hidden">Telegram</span></a>
+        </li>
+      </ul>
 
-    <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="copyright__text">HTML Academy</span>
-    </a>
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+      </a>
+    </div>
   </footer>
 </body>
 

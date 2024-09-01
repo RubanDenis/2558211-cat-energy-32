@@ -20,7 +20,7 @@
 
   &--main {
     @media (min-width: $desktop-width) {
-      // color: $light-text;
+      color: $light-text;
     }
   }
 }
@@ -28,16 +28,11 @@
 .navigation__toggle {
   width: 24px;
   height: 24px;
-  padding: 4px 0;
+  padding: 0;
   position: absolute;
-  top: 20px;
-  left: 85%;
-  right: 21;
+  top: 24px;
+  right: 21px;
   z-index: 10;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 
   &:hover::before,
   &:focus::before {
@@ -46,6 +41,10 @@
 
   &:active::before {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -59,12 +58,12 @@
 }
 
 .navigation--open .navigation__toggle {
+  top: 20px;
+
   &::before,
   &::after {
     @include pseudo-element (24px, 2px);
     position: absolute;
-    left: 0;
-    top: 45%;
     background-color: $dark-text;
   }
 
