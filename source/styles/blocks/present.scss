@@ -1,4 +1,6 @@
 .present {
+  @include flex (column, space-between, center);
+  gap: 48px;
   background-color: $bg-primary;
   background-image:
     image-set(url("../../images/present-cat-mobile@1x.webp") type("image/webp") 1x,
@@ -10,6 +12,7 @@
   background-size: cover;
   position: relative;
   z-index: 1;
+  padding: 59px 61px 41px 58px;
 
   &::before {
     @include icon-img (78px, 81px, url("../../icons/stack.svg#present"));
@@ -32,19 +35,23 @@
   }
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     background-image:
       image-set(url("../../images/present-cat-tablet@1x.webp") type("image/webp") 1x,
       url("../../images/present-cat-tablet@2x.webp") type("image/webp") 2x,
       url("../../images/present-cat-tablet@1x.png") type("image/png") 1x,
       url("../../images/present-cat-tablet@2x.png") type("image/png") 2x);
+    padding: 71px 125px 69px 77px;
   }
 
   @media (min-width: $desktop-width) {
+    flex-direction: column;
     background-image:
       image-set(url("../../images/present-cat-desktop@1x.webp") type("image/webp") 1x,
       url("../../images/present-cat-desktop@2x.webp") type("image/webp") 2x,
       url("../../images/present-cat-desktop@1x.png") type("image/png") 1x,
       url("../../images/present-cat-desktop@2x.png") type("image/png") 2x);
+    padding: 56px 42px 43px;
   }
 }
 
@@ -57,4 +64,14 @@
   color: $light-text;
   margin: 0;
   z-index: 3;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
