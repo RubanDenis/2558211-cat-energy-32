@@ -5,6 +5,11 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
   }
 }
 
@@ -16,9 +21,15 @@
   color: $gray-text;
   line-height: 1.33;
   font-weight: $font-weight-normal;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $light-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
   }
 }

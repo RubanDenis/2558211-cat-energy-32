@@ -77,3 +77,16 @@
     box-shadow: none;
   }
 }
+
+.navigation--nojs {
+  position: static;
+  min-height: 0;
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs .site-list {
+  display: block;
+}

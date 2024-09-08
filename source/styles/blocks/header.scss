@@ -1,11 +1,12 @@
 .header {
   @include flex (row, space-between, center);
+  flex-wrap: wrap;
   width: 100%;
   min-height: 65px;
-  padding: 14px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
     padding: 25px 30px;
     align-self: flex-start;
   }
@@ -24,11 +25,25 @@
       z-index: 10;
     }
   }
+
+  &--catalog {
+    &::after {
+      @include pseudo-element (100%, 1px);
+      background-color: $bg-accent-dark;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 .header__logo {
   @include flex (row, space-between, center);
   gap: 56px;
+  padding: 13px 20px;
 
   &:hover,
   &:focus-visible {
@@ -41,6 +56,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 13px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {

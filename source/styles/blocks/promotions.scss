@@ -1,29 +1,53 @@
 .promotions {
   padding: 40px 20px;
+  position: relative;
+
+  &::before {
+    @include pseudo-element (33%, 2px, absolute);
+    background-color: $bg-primary;
+    top: 52px;
+    right: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 80px 68px;
+
+    &::before {
+      width: 100%;
+      top: 96px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 96px 110px 104px;
+
+    &::before {
+      top: 116px;
+    }
   }
 }
 
 .promotions__title {
+  position: relative;
+  width: 160px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 1;
   font-weight: $font-weight-normal;
   margin: 0;
   margin-bottom: 32px;
+  background-color: $bg-default;
+  z-index: 10;
 
   @media (min-width: $tablet-width) {
+    width: 282px;
     margin-bottom: 66px;
+    padding: 0 40px;
     font-size: 32px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 333px;
     margin-bottom: 72px;
     font-size: 40px;
   }

@@ -3,6 +3,7 @@
   width: 100%;
   padding: 25px 20px 24px;
   text-align: center;
+  box-shadow: 0 1px 0 0 $bg-accent-light;
 
   &::before {
     @include icon-img (30px, 30px, url("../../icons/stack.svg#plus"));
