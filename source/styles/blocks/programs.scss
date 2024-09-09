@@ -160,6 +160,13 @@
     @include mask-img (24px, 12px, url("../../icons/stack.svg#arrow"), $dark-text);
   }
 
+  &:hover::after,
+  &:active::after {
+    transform-origin: left;
+    transform: scale(1.33, 1);
+    transition: transform 0.3s ease;
+  }
+
   &:active {
     opacity: 0.3;
   }

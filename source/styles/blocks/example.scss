@@ -232,4 +232,22 @@
     mask-position: center;
     mask-repeat: no-repeat;
   }
+
+  &:hover::before {
+    border-color: $bg-primary;
+  }
+
+  &:active::before {
+    border-color: rgba($bg-primary, 0.6);
+  }
+
+  &:hover,
+  &:hover::after {
+    background-color: $bg-primary;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: rgba($bg-primary, 0.6);
+  }
 }
