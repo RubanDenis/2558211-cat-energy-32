@@ -9,11 +9,27 @@
   &--primary {
     color: $light-text;
     background-color: $bg-primary;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $bg-primary-hover;
+    }
+
+    &:active {
+      color: rgba($light-text, 0.3);
+      background-color: $bg-primary-hover;
+    }
   }
 
   &--secondary {
     color: $gray-text;
     background-color: $bg-secondary;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      background-color: $bg-secondary-hover;
+    }
   }
 
   &--transparent {

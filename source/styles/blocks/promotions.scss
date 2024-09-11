@@ -92,8 +92,24 @@
   font-weight: $font-weight-normal;
   color: $gray-text;
   text-transform: uppercase;
-  border: 1px solid $light-gray;
+  border: 1px solid $accent-gray;
   padding: 12px;
+
+  &:hover {
+    border-color: $light-gray;
+  }
+
+  &:focus {
+    border: 2px solid $gray;
+  }
+
+  &:user-invalid {
+    border: 2px solid $danger;
+  }
+
+  &:valid {
+    border: 2px solid $bg-primary;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
