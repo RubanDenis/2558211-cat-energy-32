@@ -26,8 +26,7 @@
   }
 
   &::after {
-    @include pseudo-element (100%, 100%);
-    position: absolute;
+    @include pseudo-element (100%, 100%, absolute);
     top: 0;
     left: 0;
     z-index: 2;

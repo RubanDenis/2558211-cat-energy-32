@@ -1,14 +1,14 @@
 .promo {
   position: relative;
   width: 100%;
-  margin-bottom: 20px;
-  padding-top: 27px;
   font-family: $secondary-font;
   color: $light-text;
+  margin-bottom: 20px;
+  padding-top: 27px;
 
   &::before {
     @include pseudo-element (100%, auto, absolute);
-    margin-bottom: 178px;
+    margin-bottom: 176px;
     inset: 0;
     background-image:
       linear-gradient(to right, rgba($bg-primary, 0.85), rgba($bg-primary, 0.85)),
@@ -28,6 +28,7 @@
   @media (min-width: $tablet-width) {
     color: $dark-text;
     background-color: $bg-default;
+    margin-bottom: 0;
     padding: 0 30px;
     padding-top: 40px;
 
@@ -93,12 +94,12 @@
     font-size: 60px;
     width: 420px;
     margin-bottom: 40px;
-    margin-left: 90px;
+    margin-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-    margin: 224px 0 40px 80px;
+    margin: 224px 0 40px 50px;
     grid-column: 1/2;
   }
 }
@@ -113,12 +114,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin-left: 90px;
-    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 52px 80px;
+    margin: 0 0 52px 50px;
     grid-column: 1/2;
   }
 }
@@ -128,6 +129,7 @@
   line-height: 1.25;
   width: 100%;
   order: 1;
+  margin-top: 3px;
   padding: 10px 0;
 
   @media (min-width: $tablet-width) {
@@ -135,20 +137,21 @@
     line-height: 1.3;
     order: 0;
     width: 244px;
-    margin-left: 90px;
+    margin-left: 60px;
     padding: 14px 26px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 184px 80px;
+    margin: 0 0 184px 50px;
     grid-column: 1/2;
   }
 }
 
 .promo__image {
   @media (min-width: $tablet-width) {
-    margin-top: -73px;
+    margin-top: -82px;
+    margin-left: -30px;
   }
 
   @media (min-width: $desktop-width) {

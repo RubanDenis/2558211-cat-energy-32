@@ -9,13 +9,17 @@
 
   @media (min-width: $tablet-width) {
     @include flex (row,flex-end,center);
+    align-self: flex-end;
     font-size: 18px;
     line-height: 1.33;
+    padding: 0 6px 2px 0;
   }
 
   @media (min-width: $desktop-width) {
+    align-self: self-start;
     font-size: 20px;
     line-height: 1.5;
+    padding: 0;
   }
 
   &--main {
@@ -26,11 +30,11 @@
 }
 
 .navigation__toggle {
+  position: absolute;
   width: 24px;
   height: 24px;
   padding: 0;
-  position: absolute;
-  top: 24px;
+  top: 23px;
   right: 21px;
   z-index: 10;
 
@@ -49,8 +53,7 @@
 }
 
 .navigation--close .navigation__toggle::before {
-  @include pseudo-element (24px, 2px);
-  position: absolute;
+  @include pseudo-element (24px, 2px, absolute);
   top: 0;
   left: 0;
   background-color: $dark-text;
@@ -62,8 +65,7 @@
 
   &::before,
   &::after {
-    @include pseudo-element (24px, 2px);
-    position: absolute;
+    @include pseudo-element (24px, 2px, absolute);
     background-color: $dark-text;
   }
 
