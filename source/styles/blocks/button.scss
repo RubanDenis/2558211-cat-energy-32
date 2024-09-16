@@ -13,6 +13,7 @@
     &:hover,
     &:focus-visible {
       background-color: $bg-primary-hover;
+      outline: none;
     }
 
     &:active {
@@ -29,6 +30,7 @@
     &:focus-visible,
     &:active {
       background-color: $bg-secondary-hover;
+      outline: none;
     }
   }
 

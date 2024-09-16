@@ -1,28 +1,30 @@
 .promotions {
   padding: 40px 20px;
+  margin: 0 auto;
   position: relative;
 
   &::before {
-    @include pseudo-element (33%, 2px, absolute);
+    @include pseudo-element (34%, 2px, absolute);
     background-color: $bg-primary;
-    top: 52px;
+    top: 51px;
     right: 0;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 80px 68px;
+    padding: 80px 30px;
 
     &::before {
       width: 100%;
-      top: 96px;
+      top: 93px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 96px 110px 104px;
+    max-width: 1440px;
+    padding: 96px 70px 104px;
 
     &::before {
-      top: 116px;
+      top: 113px;
     }
   }
 }
@@ -78,10 +80,12 @@
   @media (min-width: $tablet-width) {
     @include flex (row, flex-start, center);
     gap: 0;
+    padding: 0 38px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 52%;
+    width: 58%;
+    padding: 0;
   }
 }
 
@@ -99,8 +103,9 @@
     border-color: $light-gray;
   }
 
-  &:focus {
+  &:focus-visible {
     border: 2px solid $gray;
+    outline: none;
   }
 
   &:user-invalid {
@@ -112,7 +117,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 66%;
   }
 }
 

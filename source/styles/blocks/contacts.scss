@@ -15,7 +15,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 70px;
+    padding: 60px 70px;
     gap: 308px;
   }
 
@@ -23,10 +23,10 @@
     grid-template-columns: 163px 157px;
     grid-column: 2/3;
     grid-row: 1/2;
+    gap: 87px;
     width: 565px;
     padding: 60px 78px 60px 80px;
     margin: 95px 0 106px;
-    gap: 87px;
     z-index: 1;
   }
 
@@ -163,6 +163,10 @@
   height: 362px;
   border: none;
   margin: 0;
+
+  &:focus-visible {
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     height: 400px;

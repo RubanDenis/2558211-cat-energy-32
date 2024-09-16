@@ -1,5 +1,5 @@
 .product-info {
-  @include flex (column, space-between, center);
+  @include flex (column, flex-start, center);
   padding: 0;
   list-style: none;
 
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 10px;
+    gap: 6px;
   }
 }
 
@@ -21,15 +21,19 @@
   color: $gray-text;
   line-height: 1.33;
   font-weight: $font-weight-normal;
-  padding-bottom: 4px;
-  border-bottom: 1px solid $light-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 1.25;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $light-gray;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 5px;
+    padding-bottom: 6px;
+
+    &:last-child {
+      padding-bottom: 9px;
+    }
   }
 }

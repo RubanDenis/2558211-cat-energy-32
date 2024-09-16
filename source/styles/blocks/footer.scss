@@ -26,8 +26,9 @@
   border-bottom: 1px solid $bg-accent-dark;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     opacity: 0.8;
+    outline: none;
   }
 
   &:active {

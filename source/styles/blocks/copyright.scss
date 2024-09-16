@@ -11,6 +11,10 @@
     @include mask-img (27px, 34px, url("../../icons/stack.svg#academy"), $light-gray-text);
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:hover::after,
   &:focus::after,
   &:active::after {

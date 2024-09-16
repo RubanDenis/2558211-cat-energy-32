@@ -2,12 +2,12 @@
   @include flex (column, flex-start, normal);
   position: relative;
   margin: 0 auto;
-  padding: 25px 20px 0;
+  padding: 27px 20px 0;
 
   &::before {
-    @include pseudo-element (10%, 2px, absolute);
+    @include pseudo-element (11%, 2px, absolute);
     background-color: $bg-primary;
-    top: 35px;
+    top: 37px;
     right: 0;
   }
 
@@ -16,16 +16,16 @@
 
     &::before {
       width: 100%;
-      top: 90px;
+      top: 88px;
     }
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    padding: 71px 110px 0;
+    padding: 71px 70px 0;
 
     &::before {
-      top: 91px;
+      top: 89px;
     }
   }
 }
@@ -41,6 +41,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
+    padding: 0 40px;
   }
 }
 
@@ -52,7 +53,7 @@
   line-height: 1;
   font-weight: $font-weight-normal;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   background-color: $bg-default;
   z-index: 10;
 

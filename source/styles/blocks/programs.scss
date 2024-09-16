@@ -173,6 +173,10 @@
     transform: scaleX(1.33);
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:active {
     opacity: 0.3;
   }
