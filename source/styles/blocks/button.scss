@@ -6,6 +6,16 @@
   border: none;
   cursor: pointer;
 
+  &:focus-visible {
+    outline: none;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.7;
+  }
+
   &--primary {
     color: $light-text;
     background-color: $bg-primary;

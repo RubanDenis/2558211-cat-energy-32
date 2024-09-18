@@ -57,6 +57,7 @@
 }
 
 .about__item {
+  position: relative;
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 20px;
@@ -84,6 +85,7 @@
       counter-increment: section 1;
       color: $bg-secondary;
       z-index: -1;
+      left: 115px;
     }
   }
 
